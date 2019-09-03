@@ -1,0 +1,72 @@
+0.000000 (0.000000): Started
+0.000028 (0.000028): source/rofi.c:main:776 
+0.000079 (0.000051): source/rofi.c:main:816 
+0.000124 (0.000045): source/rofi.c:main:823 Setup Locale
+0.000857 (0.000733): source/rofi.c:main:825 Collect MODI
+0.000865 (0.000008): source/rofi.c:main:827 Setup MODI
+0.000878 (0.000013): source/rofi.c:main:831 Setup mainloop
+0.001008 (0.000130): source/rofi.c:main:834 NK Bindings
+0.001221 (0.000213): source/xcb.c:display_setup:1101 Open Display
+0.001787 (0.000566): source/xcb.c:display_setup:1116 Setup XCB
+0.009898 (0.008111): source/rofi.c:main:841 Setup Display
+0.009915 (0.000017): source/rofi.c:main:845 Setup abe
+0.013688 (0.003773): source/rofi.c:main:880 Load cmd config 
+0.014262 (0.000574): source/view.c:rofi_view_workers_initialize:1851 Setup Threadpool, start
+0.014292 (0.000030): source/view.c:rofi_view_workers_initialize:1874 Setup Threadpool, done
+0.025549 (0.011257): source/rofi.c:main:985 Setup late Display
+0.025644 (0.000095): source/rofi.c:startup:645 Startup
+0.025648 (0.000004): source/rofi.c:startup:654 Grab keyboard
+0.025710 (0.000062): source/view.c:__create_window:704 xcb create window
+0.025723 (0.000013): source/view.c:__create_window:708 xcb create gc
+0.026308 (0.000585): source/view.c:__create_window:717 create cairo surface
+0.026488 (0.000180): source/view.c:__create_window:726 pango cairo font setup
+0.026547 (0.000059): source/view.c:__create_window:764 configure font
+0.054530 (0.027983): source/view.c:__create_window:772 textbox setup
+0.054545 (0.000015): source/view.c:__create_window:784 setup window attributes
+0.054552 (0.000007): source/view.c:__create_window:794 setup window fullscreen
+0.054556 (0.000004): source/view.c:__create_window:802 setup window name and class
+0.054559 (0.000003): source/view.c:__create_window:813 setup startup notification
+0.054561 (0.000002): source/view.c:__create_window:815 done
+0.054574 (0.000013): source/rofi.c:startup:656 Create Window
+0.054575 (0.000001): source/rofi.c:startup:658 Parse ABE
+0.054697 (0.000122): source/rofi.c:startup:661 Config sanity check
+0.054949 (0.000252): source/view.c:rofi_view_create:1693 
+0.054953 (0.000004): source/view.c:rofi_view_create:1710 Startup notification
+0.054954 (0.000001): source/view.c:rofi_view_create:1713 Get active monitor
+0.055764 (0.000810): source/view.c:rofi_view_refilter:1034 Filter start
+0.055889 (0.000125): source/view.c:rofi_view_refilter:1125 Filter done
+0.055892 (0.000003): source/view.c:rofi_view_update:984 
+0.055918 (0.000026): source/view.c:rofi_view_update:1004 Background
+0.089256 (0.033338): source/view.c:rofi_view_update:1014 widgets
+0.089389 (0.000133): source/view.c:rofi_view_update:984 
+0.089397 (0.000008): source/view.c:rofi_view_update:1004 Background
+0.089657 (0.000260): source/view.c:rofi_view_update:1014 widgets
+0.089688 (0.000031): source/view.c:rofi_view_repaint:234 Expose
+0.089694 (0.000006): source/view.c:rofi_view_repaint:238 flush
+0.100400 (0.010706): source/view.c:rofi_view_update:984 
+0.100411 (0.000011): source/view.c:rofi_view_update:1004 Background
+0.100624 (0.000213): source/view.c:rofi_view_update:1014 widgets
+0.100648 (0.000024): source/view.c:rofi_view_repaint:234 Expose
+0.100653 (0.000005): source/view.c:rofi_view_repaint:238 flush
+0.102864 (0.002211): source/view.c:rofi_view_repaint:234 Expose
+0.102878 (0.000014): source/view.c:rofi_view_repaint:238 flush
+0.190047 (0.087169): source/view.c:rofi_view_repaint:234 Expose
+0.190060 (0.000013): source/view.c:rofi_view_repaint:238 flush
+0.190145 (0.000085): source/view.c:rofi_view_refilter:1034 Filter start
+0.190161 (0.000016): source/view.c:rofi_view_refilter:1125 Filter done
+0.190164 (0.000003): source/view.c:rofi_view_update:984 
+0.190172 (0.000008): source/view.c:rofi_view_update:1004 Background
+0.190977 (0.000805): source/view.c:rofi_view_update:1014 widgets
+0.191000 (0.000023): source/view.c:rofi_view_repaint:234 Expose
+0.191005 (0.000005): source/view.c:rofi_view_repaint:238 flush
+0.979241 (0.788236): source/view.c:rofi_view_update:984 
+0.979264 (0.000023): source/view.c:rofi_view_update:1004 Background
+0.979598 (0.000334): source/view.c:rofi_view_update:1014 widgets
+0.979657 (0.000059): source/view.c:rofi_view_repaint:234 Expose
+0.979663 (0.000006): source/view.c:rofi_view_repaint:238 flush
+1.256073 (0.276410): source/view.c:rofi_view_update:984 
+1.256085 (0.000012): source/view.c:rofi_view_update:1004 Background
+1.256299 (0.000214): source/view.c:rofi_view_update:1014 widgets
+1.256304 (0.000005): source/view.c:rofi_view_repaint:234 Expose
+1.256315 (0.000011): source/view.c:rofi_view_repaint:238 flush
+1.443395 (0.000000): Stopped

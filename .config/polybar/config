@@ -1,0 +1,674 @@
+[colors]
+background = ${xrdb:color0}
+;background = #333
+background-alt = #444
+foreground = #ffffff
+;foreground = #dfdfdf
+foreground-alt = #555
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+foreground-bright = #ddd
+red=      #eb606b
+green=     #c3e88d
+yellow=      #f7eb95
+blue=     #aeddff
+magenta=     #6c71c3
+cyan=     #80cbc3
+white=      #ffffff
+koyugri = #0e0e0e
+beyaz = #ffffff
+altcizgi1 = #fba922
+altcizgi2 = #ffffff
+uyari = #555599
+
+
+[bar/top]
+monitor = ${env:MONITOR:LVDS-0}
+fixed-center = false
+width = 100%
+height = 20 
+;offset-x = 2%
+offset-y = 1
+dpi-x = 100
+dpi-y = 100
+background = #393939
+;foreground = ${xrdb:color7}
+foreground = #efefef
+override-redirect = true
+wm-restack = bspwm
+separator =%{F#666666}%{O-1}┊%{F-}%{F#BBBBBB}%{O-6}┊%{F-}%{F#7F7F7F}%{O-6}┊%{F-}
+;┆i┊⚬║⏐
+border-bottom-size=3
+border-bottom-color=#5a5a5a
+border-top-size=2
+border-top-color=#5a5a5a
+
+
+
+
+underline-size =2
+underline-color = #eee
+
+overline-size =2
+overline-color = #eee
+
+locale = tr_TR.UTF-8
+spacing = 1 
+padding-left = 0 
+padding-right =1 
+module-margin = 1
+;separator =  
+
+
+;font-0 = Gidole:style=Regular:size=10;2
+
+font-0 = Open Sans:style=Regular:size=9;1
+font-1 = FontAwesome:size=12;1
+font-2 = WunconSiji:size=40;3
+font-3 = Inconsolata Nerd Font:style=Medium:pixelsize=12;1
+;font-3 = Material\-Design\-Iconic\-Font:style=Design-Iconic-Font:size=12;1
+font-4 = Material Icons:style=Regular:size=10;5
+;font-5 = Droid Sans Fallback:style=Regular:size=10
+font-5 = DejaVu Serif:antialias=false:style=Regular:pixelsize=10;2
+font-6 = Material\-Design\-Iconic\-Font:style=Design-Iconic-Font:pixelsize=13;15
+font-7 = micon_nb:style=Regular:size=20;0
+font-8 = micon_nb:style=Regular:size=11;1
+font-9 = micon_nb:style=Regular:size=12;2
+font-10 = micon_nb:style=Regular:pixelsize=10;2
+font-11 = Noto Sans Symbols2:style=Regular:pixelsize=13;2
+font-12 = Noto Sans Symbols:style=Regular:pixelsize=16;2
+font-13 = Noto Sans Symbols:style=Regular:pixelsize=18;2
+font-14 = "Weather Icons:size=10;2"
+font-15 = Open Sans:style=Regular:size=9;1
+font-16 = PIXymbolsAlphaboxW95\-Reg:style=Regular:size=11;2
+font-17 = PIXymbolsAlphaboxW90\-Bold:style=Regular:size=11;2
+font-18 = Curved Square:style=Bold:size=20;1
+font-19 = Curved Square:style=Bold:size=18;1
+
+;font-11 = Roboto,Roboto Medium:style=Medium,Regular:pixelsize=20;1
+modules-left = bspwm
+modules-center = 
+modules-right = memory filesystem xkeyboard xbacklight battery volume date eth wifi powermenu
+
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+; MODULES
+
+[module/bspwm]
+type = internal/bspwm
+format ="<label-state> %{u#ff9900 +u}<label-mode> %{-u}"
+
+;enable-scroll = false
+;reverse-scroll = false
+
+ws-icon-0 = web;
+ws-icon-1 = term;ﲵ
+ws-icon-2 = chat;
+ws-icon-3 = code;%{T4}ﬥ%{T-}
+ws-icon-4 = music;%{T4}%{T-}
+ws-icon-default = 
+
+label-active = %icon%
+label-active-foreground = #ffffff
+label-active-background = #3f3f3f
+label-active-underline = #fba922
+label-active-font = 3
+label-active-padding = 2
+
+
+label-focused = %icon%
+label-focused-background = #88000000
+label-focused-overline= #ddd
+label-focused-padding = 4
+
+label-occupied = %icon%
+label-occupied-padding = 2
+label-occupied-font = 10
+label-occupied-underline = #ff0000
+
+
+label-urgent = %icon%
+label-urgent-padding = 2
+
+label-empty = %icon%
+label-empty-foreground = #99ffffff
+label-empty-padding = 2
+label-empty-underline = #bbbbbb
+
+label-monocle = M 
+label-tiled = T 
+label-fullscreen = S 
+label-floating = F 
+label-pseudotiled = P
+label-locked = L
+label-locked-foreground = #bd2c40
+label-sticky = S
+label-sticky-foreground = #fba922
+label-private = 
+label-private-foreground = #bd2c40
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+strip-wsnumbers = true
+pin-workspaces = true
+
+label-mode-padding = 4 
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
+
+label-focused = %name%
+label-focused-background = ${colors.secondary}
+label-focused-underline = ${colors.primary}
+label-focused-padding = 4 
+
+label-unfocused = %name%
+label-unfocused-padding = 2
+
+label-urgent = %name%!
+label-urgent-background = ${colors.secondary}
+label-urgent-padding = 2
+
+label-visible = %name%
+label-visible-background = ${colors.secondary}
+label-visible-underline = ${colors.primary}
+label-visible-padding = 4
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+mount-0 = /
+label-mounted ="%{A1:nautilus:}%{T12}🖴 %{T-}%percentage_used%%%{A}"
+
+
+[module/xwindow]
+type = internal/xwindow
+label =%title:0:15:..%
+format-background = #222222
+format-foreground = #aeaeae
+format-underline = #ffffff
+format-padding = 3
+label-maxlen = 30
+
+
+
+[module/date]
+type = internal/date
+interval = 1.0
+; See "man date" for details on how to format the date string
+; NOTE: if you want to use syntax tags here you need to use %%{...}
+date = %d.%m.%Y %a, 
+
+; Optional time format
+time = %H:%M
+
+; if `date-alt` or `time-alt` is defined, clicking
+; the module will toggle between formats
+;date-alt = %A, %d %B %Y
+;time-alt = %H:%M:%S
+
+label = "%{A1:gsimplecal:}%{T9}%{T-}%{A}  %date%    %time%"
+format =<label>
+;format-background = #0E0E0E
+;format-underline = #BBBBBB
+;format-padding = 3
+label-font = 1 
+
+
+[module/spacer]
+type = custom/text
+content-background = ${colors.background}
+content-foreground = ${colors.background}
+content-padding = 4
+content =                |
+
+:
+[module/apps]
+type = custom/text
+content-font = 1
+content = "   %{A1:google-chrome-stable:}%{F#ff9f1c} %{F-}%{A}" 
+content-foreground = #ffffff
+content-background = ${colors.koyugri}
+content-underline = #ffffff
+[module/volminus]
+type = custom/text
+content = "%{A1:pactl set-sink-volume 1 -5%:}%{F#e71d36}  %{F-}%{A}" 
+content-foreground = #ffffff
+content-background = ${colors.koyugri}
+content-underline = #ffffff
+
+
+
+
+
+[module/battery]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = AC0
+poll-interval = 5
+
+
+format-charging = <animation-charging> <label-charging>
+;format-charging-background = #0E0E0E
+;format-charging-underline= ${colors.altcizgi2}
+;format-discharging-background = #0E0E0E
+;format-discharging-underline= ${colors.altcizgi2}
+
+format-discharging = <ramp-capacity> <label-discharging>
+label-charging = "%percentage%%"
+label-discharging = "%percentage%%"
+
+
+format-full =%{T8}%{T-} <label-full>
+label-full = "%percentage%%"
+;format-full-background = #0E0E0E
+;format-full-underline= ${colors.altcizgi2}
+
+
+
+ramp-capacity-font=7
+ramp-capacity-0 =%{F#D64933} %{F-}
+ramp-capacity-1 =%{F#C14E36} %{F-}
+ramp-capacity-2 =%{F#AD533A} %{F-}
+ramp-capacity-3 =%{F#99583E} %{F-}
+ramp-capacity-4 =%{F#855D42} %{F-} 
+ramp-capacity-5 =%{F#716246} %{F-}
+ramp-capacity-6 =%{F#5C6749} %{F-} 
+ramp-capacity-7 =%{F#486C4D} %{F-}
+ramp-capacity-8 =%{F#347151}%{F-}
+ramp-capacity-9 =%{F#207655}%{F-}
+ramp-capacity-10 = %{F#71B325}%{F-}
+
+
+
+animation-charging-font=7
+;animation-charging-0 = " "
+;animation-charging-1 = " "
+;animation-charging-2 = " "
+;animation-charging-3 = " "
+;animation-charging-4 = " "
+
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-4 = " "
+animation-charging-5 = " "
+animation-charging-6 = " "
+animation-charging-7 = " "
+animation-charging-8 = " "
+animation-charging-9 = " "
+animation-charging-10 = " "
+
+animation-charging-framerate = 750
+
+[module/xbacklight]
+type = internal/xbacklight
+format = "<ramp><label>"
+label = %percentage%
+ramp-0 = " "
+ramp-1 = " "
+ramp-2 = " "
+ramp-3 = " "
+ramp-4 = " "
+ramp-5 = " "
+
+
+[module/volume]
+type = internal/volume
+
+format-volume ="<ramp-volume><label-volume>"
+format-muted =<label-muted>
+label-volume = "%percentage%%" 
+label-muted-background = ${colors.uyari}
+label-muted =" ﱝ Sessiz  " 
+label-muted-underline = #FF0000
+label-muted-foreground = #aaa
+
+ramp-volume-0 ="  "
+ramp-volume-1 ="  "
+ramp-volume-2 ="  "
+;ramp-headphones-0 =  
+
+[module/powermenu]
+type = custom/menu
+
+;label-open =  
+label-open = 
+label-open-background = ${colors.secondary}
+label-open-underline = #EEEE00
+;label-open-foreground = #fff
+label-close = cancel
+label-close-background = #E0E0E0
+label-close-foreground = #fff
+label-open-padding = 2
+label-close-padding = 2
+label-close-underline = #EEEE00
+
+menu-0-0 = reboot
+menu-0-0-exec = menu-open-1
+menu-0-1 = power off
+menu-0-1-exec = menu-open-2
+menu-0-0-padding = 3
+menu-0-0-background = #eeee00
+
+menu-0-1-padding = 3
+
+menu-1-0 = reboot?  
+menu-1-0-exec = sudo reboot
+menu-1-0-padding = 3
+
+menu-2-0 = power off?  
+menu-2-0-exec = sudo poweroff
+menu-2-0-padding = 3
+
+[module/xkeyboard]
+type = internal/xkeyboard
+
+format-spacing = 0
+;indicator-icon-0 = caps lock;%{T17}%{F#888888}|{ab{|%{F-}%{T-};%{T18}%{F#ffbd00}|'AB'|%{F-}%{T-}
+;indicator-icon-1 = scroll lock;;+SL
+;indicator-icon-2 = num lock;%{T17}%{F#888888}|{45{|%{F-}%{T-};%{T18}%{F#ff5400}|'$%'|%{F-}%{T-}
+indicator-icon-0 = caps lock;%{F#515151}%{T19}a%{T-}%{F-};%{F#d90368}%{T20}{%{T-}%{F-}%{F#FFBD00}%{T19}%{O-16}a%{T-}%{F-};
+indicator-icon-1 = num lock;%{F#515151}%{T19}1%{T-}%{F-};%{F#000000}%{T20}{%{T-}%{F-}%{F#0cce6b}%{T19}%{O-16}1%{T-}%{F-};
+
+;indicator-icon-1 = num lock;%{F#515151}%{T19}1%{T-}%{F-};%{F#0cce6b}%{T19}1%{T-}%{F-};
+
+label-layout ="%{T12}🖮 %{T-}%layout%"
+;label-indicator ="%{B#393939}%{F#999999}┆%{F-}%{B-} %{B#e55934} %icon% %{B-}"
+
+label-indicator-on = %icon%
+label-indicator-off = %icon%
+
+[module/wifi]
+type = internal/network
+interface = wlan0
+interval = 3.0
+;udspeed-minwidth = 0
+click-left=/home/okten/.scripts/wifi_toggle.sh
+
+;format-connected-background = #0e0e0e
+;format-connected-underline = #FFFFFF
+format-connected = %{A1:/home/okten/.scripts/wifi_toggle.sh:}<ramp-signal> <label-connected>%{A}
+label-connected = %essid%
+
+
+label-disconnected = %ifname%
+format-disconnected-background = ${colors.uyari}
+format-disconnected ="%{A1:/home/okten/.scripts/wifi_toggle.sh:} 睊 <label-disconnected>%{A}   " 
+format-disconnected-underline = #FF0000
+
+ramp-signal-font=6
+ramp-signal-0=%{F#FF5555}▁%{F-} %{F#5f5f5f}▁%{F-} %{F#5f5f5f}▁%{F-} %{F#5f5f5f}▁%{F-} %{F#5f5f5f}▁%{F-} %{F#5f5f5f}▁%{F-}
+ramp-signal-1=%{F#FF5555}▁%{F-} %{F#CC7744}▂%{F-} %{F#5f5f5f}▁%{F-} %{F#5f5f5f}▁%{F-} %{F#5f5f5f}▁%{F-} %{F#5f5f5f}▁%{F-}
+ramp-signal-2=%{F#FF5555}▁%{F-} %{F#CC7744}▂%{F-} %{F#999933}▃%{F-} %{F#5f5f5f}▁%{F-} %{F#5f5f5f}▁%{F-} %{F#5f5f5f}▁%{F-}
+ramp-signal-3=%{F#FF5555}▁ %{F-}%{F#CC7744}▂ %{F-}%{F#999933}▃ %{F-}%{F#66BB22}▄ %{F-}%{F#5f5f5f}▁ %{F-}%{F#5f5f5f}▁%{F-}
+ramp-signal-4=%{F#FF5555}▁ %{F-}%{F#CC7744}▂ %{F-}%{F#999933}▃ %{F-}%{F#66BB22}▄ %{F-}%{F#32DD10}▅ %{F-}%{F#5f5f5f}▁%{F-}
+ramp-signal-5=%{F#FF5555}▁ %{F-}%{F#CC7744}▂ %{F-}%{F#999933}▃ %{F-}%{F#66BB22}▄ %{F-}%{F#32DD10}▅ %{F-}%{F#00FF00}▆%{F-}
+
+
+[module/volume1]
+type = internal/volume
+
+format-volume =  <bar-volume>
+format-volume-prefix = " "
+format-volume-foreground = ${colors.foreground-bright}
+label-volume-foreground = ${colors.foreground}
+
+format-muted-prefix = " "
+format-muted-foreground = ${colors.foreground}
+label-muted = " 0% ○○○○○○○○○○"
+
+bar-volume-width = 10
+bar-volume-foreground-0 = #55aa55
+bar-volume-foreground-1 = #55aa55
+bar-volume-foreground-2 = #55aa55
+bar-volume-foreground-3 = #55aa55
+bar-volume-foreground-4 = #55aa55
+bar-volume-foreground-5 = #f5a70a
+bar-volume-foreground-6 = #ff5555
+bar-volume-gradient = false
+bar-volume-indicator = ●
+bar-volume-fill = ●
+bar-volume-empty = ○
+bar-volume-empty-foreground = ${colors.foreground}
+
+[module/cpu]
+type = internal/cpu
+format-background = #0E0E0E
+format-padding = 2
+format-underline = ${colors.yellow}
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 0.5
+; Available tags:
+;   <label> (default)
+;   <bar-load>
+;   <ramp-load>
+;   <ramp-coreload>
+format = <label> %{F#009900}<ramp-coreload>
+
+; Available tokens:
+;   %percentage% (default) - total cpu load
+;   %percentage-cores% - load percentage for each core
+;   %percentage-core[1-9]% - load percentage for specific core
+label = CPU %percentage:2%%
+
+ramp-coreload-0 = ▁
+ramp-coreload-1 = ▂
+ramp-coreload-2 = ▃
+ramp-coreload-3 = ▄
+ramp-coreload-4 = ▅
+ramp-coreload-5 = ▆
+ramp-coreload-6 = ▇
+ramp-coreload-7 = █
+
+
+[module/eth]
+type = internal/network
+interface = eth0
+interval = 3.0
+
+label-connected-font = 4
+format-connected = %{A1:/home/okten/.scripts/ethernet_toggle.sh:}<label-connected>%{A}
+;format-connected-background = #0E0E0E
+label-connected = "%{T10} %{T-} %ifname%"
+;label-connected-foreground = ${colors.foreground}
+;format-connected-underline = #FFFFFF
+
+
+format-disconnected = %{A1:/home/okten/.scripts/ethernet_toggle.sh:} %{T10}%{T-}<label-disconnected>%{A}
+label-disconnected = "%ifname% "
+;format-disconnected-underline = #FF0000
+;format-disconnected-background = #555599
+;format-disconnected-foreground = #aaaaaa
+
+
+
+[module/weather-full]
+type = custom/script
+;exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
+exec = ~/openweather.py
+
+
+
+interval = 600
+label-font = 15 
+
+
+
+
+
+
+
+
+
+
+
+[global/wm]
+; Adjust the _NET_WM_STRUT_PARTIAL top value
+;   Used for top aligned bars
+;margin-bottom = 4 
+;margin-top = 4
+
+
+[module/memory]
+type = internal/memory
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 3
+format = <label>
+label = %{T11}%{T-} %percentage_used%%
+
+; Only applies if <bar-used> is used
+bar-used-indicator =
+bar-used-width = 10
+bar-used-foreground-0 = #55aa55
+bar-used-foreground-1 = #557755
+bar-used-foreground-2 = #f5a70a
+bar-used-foreground-3 = #ff5555
+bar-used-fill = ▐
+bar-used-empty = ▐
+bar-used-empty-foreground = #444444
+
+; Only applies if <ramp-used> is used
+ramp-used-0 = ▁
+ramp-used-1 = ▂
+ramp-used-2 = ▃
+ramp-used-3 = ▄
+ramp-used-4 = ▅
+ramp-used-5 = ▆
+ramp-used-6 = ▇
+ramp-used-7 = █
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+
+
+[bar/bottom]
+monitor = ${env:MONITOR:LVDS-0}
+fixed-center = false
+width = 100%
+height = 20 
+;offset-x = 2%
+offset-y = 1
+dpi-x = 100
+dpi-y = 100
+bottom = true
+background = #393939
+;foreground = ${xrdb:color7}
+foreground = #efefef
+wm-restack = bspwm
+override-redirect = true
+border-bottom-size=3
+border-bottom-color=#5a5a5a
+border-top-size=2
+border-top-color=#5a5a5a
+tray-position = left
+tray-maxsize = 16
+tray-padding = 0
+tray-background = #393939
+tray-detached = false
+tray-underline-foreground = #0063ff
+
+
+
+
+underline-size =2
+underline-color = #eee
+
+overline-size =2
+overline-color = #eee
+
+locale = tr_TR.UTF-8
+spacing = 1 
+padding-left = 0 
+padding-right =1 
+module-margin = 1
+;separator =  
+
+
+;font-0 = Gidole:style=Regular:size=10;2
+
+font-0 = Open Sans:style=Regular:size=9;1
+font-1 = FontAwesome:size=12;1
+font-2 = WunconSiji:size=40;3
+font-3 = Inconsolata Nerd Font:style=Medium:pixelsize=12;1
+;font-3 = Material\-Design\-Iconic\-Font:style=Design-Iconic-Font:size=12;1
+font-4 = Material Icons:style=Regular:size=10;5
+;font-5 = Droid Sans Fallback:style=Regular:size=10
+font-5 = DejaVu Serif:antialias=false:style=Regular:pixelsize=10;2
+font-6 = Material\-Design\-Iconic\-Font:style=Design-Iconic-Font:pixelsize=13;15
+font-7 = micon_nb:style=Regular:size=20;0
+font-8 = micon_nb:style=Regular:size=11;1
+font-9 = micon_nb:style=Regular:size=12;2
+font-10 = micon_nb:style=Regular:pixelsize=10;2
+font-11 = Noto Sans Symbols2:style=Regular:pixelsize=13;2
+font-12 = Noto Sans Symbols:style=Regular:pixelsize=16;2
+font-13 = Noto Sans Symbols:style=Regular:pixelsize=18;2
+font-14 = "Weather Icons:size=10;2"
+font-15 = Open Sans:style=Regular:size=9;1
+;font-11 = Roboto,Roboto Medium:style=Medium,Regular:pixelsize=20;1
+
+
+
+modules-left = xwindow 
+modules-center =  
+modules-right = weather-full 
+
+
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+; MODULES
+
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
+#dsasfsd
